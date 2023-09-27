@@ -1,0 +1,7 @@
+type TMethodCard = {
+
+}
+
+type TFunction = {
+    
+}
