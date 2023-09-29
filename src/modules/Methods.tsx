@@ -1,6 +1,6 @@
 import { FC } from "react"
 
-export const MethodCard: FC<TMethodCard> = () => {
+export const Methods: FC<TMethods> = () => {
     return (
         <div>
             
