@@ -1,10 +1,10 @@
 export enum TokenType {
-    Variable,
-    Operator,
-    Function,
-    Literal,
-    LeftParenthesis,
-    RightParenthesis
+    Variable = 'Variable',
+    Operator = 'Operator',
+    Function = 'Function',
+    Literal = 'Literal',
+    LeftParenthesis = 'LeftParenthesis',
+    RightParenthesis = 'RightParenthesis'
 }
 export interface IToken {
     type: TokenType,

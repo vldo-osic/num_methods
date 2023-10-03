@@ -1,8 +1,11 @@
-import { tokenize } from "./helpers/parser"
+import { calcFunction } from "./helpers/calcFunction"
+import { getRPN } from "./helpers/parser"
+import { tokenize } from "./helpers/tokenizer"
 import { Methods } from "./modules/Methods"
 
 function App() {
-    console.log(tokenize('1 + 2sin(45)/2 * 34x - (34 * 3)'))
+    console.log(tokenize('6 + 4cos(-3x) / 5 + 5x'))
+    console.log(calcFunction(3, getRPN(tokenize('6 + 4cos(3x) / 5 + 5x'))))
     return (
         <Methods>
             
