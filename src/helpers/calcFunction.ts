@@ -14,7 +14,7 @@ export const calcFunctionOnInterval = (x: number[], func: IToken[]): number[] =>
 /**
  * Возвращает значение функции в данной точке
  * @param x Точка
- * @param func Значение
+ * @param func Функция в обратной польской нотации
  * @returns 
  */
 export const calcFunction = (x: number, func: IToken[]): number => 

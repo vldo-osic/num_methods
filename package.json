@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nivo/line": "^0.83.0",
+    "better-react-mathjax": "^2.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

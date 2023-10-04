@@ -27,8 +27,8 @@ export const POSTFIX_OPERATIONS = {
 export const UNARY_OPERATIONS = {
     'sin': (a: number): number => Math.sin(a),
     'cos': (a: number): number => Math.cos(a),
-    'tg': (a: number): number => Math.tan(a),
-    'ctg': (a: number): number => 1 / UNARY_OPERATIONS.tg(a),
+    'tan': (a: number): number => Math.tan(a),
+    'cot': (a: number): number => 1 / UNARY_OPERATIONS.tg(a),
     'sqrt': (a: number): number => Math.sqrt(a),
     'ln': (a: number): number => Math.log(a),
 }
