@@ -1,0 +1,32 @@
+h2 {
+    color: aliceblue;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.methods-container {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: center;
+}
+
+.method-card {
+    padding: 10px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+}

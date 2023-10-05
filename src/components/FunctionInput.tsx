@@ -12,7 +12,7 @@ export const FunctionInput = (handle: Handle) => {
     const handleChangeFunction = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value
         setFunc(value)
-        handle.handleFunction(value)
+        setTimeout(() => handle.handleFunction(value), 1000)
     }
 
     const handleChangeInterval = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,15 +26,16 @@ export const FunctionInput = (handle: Handle) => {
     }
 
     return (
-        <div>
-            <label htmlFor='function'>
+        <div className='input'>
+            <label className='input__func-label' htmlFor='function'>
                 <input
                     id='function' name='function'
                     type='text'
+                    placeholder='f(x)'
                     value={func}
                     onChange={handleChangeFunction}/>
             </label>
-            <label htmlFor='l'>
+            <label className='input__interval-label' htmlFor='l'>
                 <input
                     id='l' name='l'
                     type='number'
@@ -42,7 +43,7 @@ export const FunctionInput = (handle: Handle) => {
                     onChange={handleChangeInterval}
                     />
             </label>
-            <label htmlFor='r'>
+            <label className='input__interval-label' htmlFor='r'>
                 <input
                     id='r' name='r'
                     type='number'

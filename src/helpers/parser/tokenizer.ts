@@ -1,4 +1,4 @@
-import { TokenType, IToken, Buffer } from '../types/tokenizer'
+import { TokenType, IToken, Buffer } from '../../types/tokenizer'
 import token from './tokenQualifier'
 
 

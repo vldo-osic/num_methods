@@ -1,4 +1,4 @@
-import { TokenType, Buffer } from '../types/tokenizer'
+import { TokenType, Buffer } from '../../types/tokenizer'
 
 
 function isComma(ch: string) {

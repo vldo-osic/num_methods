@@ -1,14 +1,15 @@
-type TMethods = {
-    currentFunction?: TFunction
-    currentMethod?: TMethodCard
-    children: TMethodCard[]
+import { IToken } from "./tokenizer"
+
+export type TMethods = {
+    func: IToken[]
+    approx: number
+    interval: {
+        l: number
+        r: number
+    }
 }
 
-type TMethodCard = {
+export type TMethodCard = {
     title: string
-
-}
-
-type TFunction = {
-    function: string
-}
+    solution: Solution
+} 

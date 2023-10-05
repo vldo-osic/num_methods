@@ -1,4 +1,4 @@
-import { IToken, TokenType } from "../types/tokenizer"
+import { IToken, TokenType } from "../../types/tokenizer"
 
 const PRIORITY = {
     '!': 4,
@@ -28,7 +28,7 @@ export const UNARY_OPERATIONS = {
     'sin': (a: number): number => Math.sin(a),
     'cos': (a: number): number => Math.cos(a),
     'tan': (a: number): number => Math.tan(a),
-    'cot': (a: number): number => 1 / UNARY_OPERATIONS.tg(a),
+    'cot': (a: number): number => 1 / UNARY_OPERATIONS.tan(a),
     'sqrt': (a: number): number => Math.sqrt(a),
     'ln': (a: number): number => Math.log(a),
 }

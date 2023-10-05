@@ -11,3 +11,9 @@ type FuncData = {
         }
     ]
 }
+
+type Solution = {
+    x: number,
+    numCalc: number
+    time: number
+}

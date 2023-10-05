@@ -1,5 +1,5 @@
-import { IToken, TokenType } from "../types/tokenizer";
-import { BINARY_OPERATIONS, UNARY_OPERATIONS } from "./parser";
+import { IToken, TokenType } from "../../types/tokenizer";
+import { BINARY_OPERATIONS, UNARY_OPERATIONS } from "../parser/parser";
 
 
 /**

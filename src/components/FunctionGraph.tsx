@@ -1,12 +1,14 @@
 import { ResponsiveLine } from "@nivo/line"
 import { FC } from "react"
 
-
-export const FunctionGraph:FC<FuncData> = ({data}) => {
+interface Handler {
+    handleApprox: (x: number) => void
+}
+export const FunctionGraph:FC<FuncData & Handler> = ({data, handleApprox}) => {
     return (
         <ResponsiveLine
             data={data}
-            margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+            margin={{ top: 50, right: 60, bottom: 50, left: 60 }}
             xScale={{
                 type: 'linear',
                 min: 'auto',
@@ -43,32 +45,8 @@ export const FunctionGraph:FC<FuncData> = ({data}) => {
             enablePoints={false}
             isInteractive={true}
             useMesh={true}
-            legends={[
-                {
-                    anchor: 'bottom-right',
-                    direction: 'column',
-                    justify: false,
-                    translateX: 105,
-                    translateY: 0,
-                    itemsSpacing: 0,
-                    itemDirection: 'left-to-right',
-                    itemWidth: 80,
-                    itemHeight: 20,
-                    itemOpacity: 0.75,
-                    symbolSize: 12,
-                    symbolShape: 'circle',
-                    symbolBorderColor: 'rgba(0, 0, 0, .5)',
-                    effects: [
-                        {
-                            on: 'hover',
-                            style: {
-                                itemBackground: 'rgba(0, 0, 0, .03)',
-                                itemOpacity: 1
-                            }
-                        }
-                    ]
-                }
-            ]}
+            legends={[]}
+            onClick={data => handleApprox(+data.data.x)}
         />
     )
 }
