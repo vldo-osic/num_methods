@@ -10,6 +10,7 @@ import { FunctionGraph } from '../components/FunctionGraph'
 
 import '../styles/f_visual.css'
 import { TMethods } from '../types/method'
+import { FuncData } from '../types/function'
 
 interface Handler {
     handleNewFunction: (param: TMethods) => void

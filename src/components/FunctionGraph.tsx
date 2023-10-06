@@ -1,5 +1,6 @@
 import { ResponsiveLine } from "@nivo/line"
 import { FC } from "react"
+import { FuncData } from "../types/function"
 
 interface Handler {
     handleApprox: (x: number) => void

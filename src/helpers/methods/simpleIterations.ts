@@ -1,3 +1,4 @@
+import { Solution } from "../../types/function";
 import { IToken } from "../../types/tokenizer";
 import { calcFunction } from "./calcFunction";
 
@@ -22,7 +23,7 @@ const isLessThanEps = (value: number, eps: number): boolean =>
     Math.abs(value) < eps
 
 /**
- * Находит знак производной в данной точке
+ * Определяет - положительна ли производная в данной точке
  * @param func Функция
  * @param x Точка
  * @returns 

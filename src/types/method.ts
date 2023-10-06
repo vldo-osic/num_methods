@@ -1,3 +1,4 @@
+import { Solution } from "./function"
 import { IToken } from "./tokenizer"
 
 export type TMethods = {
