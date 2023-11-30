@@ -1,4 +1,4 @@
-type FuncData = {
+export type FuncData = {
     data: [
         {
             'id': string
@@ -12,7 +12,7 @@ type FuncData = {
     ]
 }
 
-type Solution = {
+export type Solution = {
     x: number,
     numCalc: number
     time: number

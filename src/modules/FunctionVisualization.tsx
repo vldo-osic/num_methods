@@ -8,8 +8,9 @@ import { calcFunction } from '../helpers/methods/calcFunction'
 import { getInterval } from '../helpers/methods/getInterval'
 import { FunctionGraph } from '../components/FunctionGraph'
 
-import '../styles/f_visual.css'
 import { TMethods } from '../types/method'
+import { FuncData } from '../types/function'
+import BackButton from '../components/BackButton'
 
 interface Handler {
     handleNewFunction: (param: TMethods) => void
@@ -41,6 +42,7 @@ export const FunctionVisualization = (handle: Handler) => {
     }, [func, approx, interval])
     return (
         <div className='visual-container'>
+            <BackButton/>
             <FunctionInput handleFunction={(value: string) => setFunc(value)}
                            handleInterval={(l, r) => setInterval({l: l, r: r})}/>
             <MathJax className='visual-container__mathjax'>{"`" + func + "`"}</MathJax>

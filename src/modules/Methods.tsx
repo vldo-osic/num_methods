@@ -1,8 +1,7 @@
 import { FC } from "react"
 import { calc } from "../helpers/methods/simpleIterations"
 import { TMethods, TMethodCard } from "../types/method"
-import { MethodCard } from "../components/MethodCard"
-import '../styles/f_visual.css'
+import { MethodCard } from "../components/methods/MethodCard"
 
 type Epsilon = {
     eps: number[]
