@@ -1,13 +1,14 @@
-import { MathJaxContext } from "better-react-mathjax"
-import { FunctionVisualization } from "./modules/FunctionVisualization"
-
-import './styles/f_visual.css'
-import { Methods } from "./modules/Methods"
 import { useState } from "react"
-import { TMethods } from "./types/method"
-import { IToken } from "./types/tokenizer"
+import MathJaxContext from "better-react-mathjax/MathJaxContext"
 
-function App() {
+import '../styles/f_visual.css'
+import '../styles/methods.css'
+import { TMethods } from "../types/method"
+import { IToken } from "../types/tokenizer"
+import { FunctionVisualization } from "../modules/FunctionVisualization"
+import { Methods } from "../modules/Methods"
+
+export const NumMethods = () => {
     const config = {
         loader: { load: ["input/asciimath"] },
         asciimath: {
@@ -25,7 +26,7 @@ function App() {
         setInterval(param.interval)
     }
     return (
-        <div className="app">
+        <div className="num-methods">
             <MathJaxContext config={config}>
               <FunctionVisualization handleNewFunction={(param: TMethods) => handleNewFunction(param)}/>
             </MathJaxContext>
@@ -33,5 +34,3 @@ function App() {
         </div>
     )
 }
-
-export default App

@@ -1,6 +1,5 @@
 import { FC } from "react"
-import { TMethodCard } from "../types/method"
-import '../styles/methods.css'
+import { TMethodCard } from "../../types/method"
 
 export const MethodCard: FC<TMethodCard> = ({title, solution}) => {
     return (

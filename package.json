@@ -16,8 +16,12 @@
     "@nivo/line": "^0.83.0",
     "better-react-mathjax": "^2.0.1",
     "gh-pages": "^6.0.0",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
