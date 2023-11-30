@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(19, 26, 29);
+}
+div, button {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+.matrix-container span {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: aliceblue;
+}
+.matrix-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px auto 60px auto;
+}
+
+.matrix-container__matrix {
+    display: grid;
+    grid-auto-flow: row;
+    margin: auto;
+}
+.matrix-container__matrix_reversed {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+}
+.matrix-container__vector {
+    display: grid;
+    grid-auto-flow: column;
+}
+.matrix-container__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    background-color: rgb(26, 37, 42);
+    border: 2px solid aliceblue;
+    color: aliceblue;
+}
+.buttons-container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 55px;
+    margin: auto;
+}
+.buttons-container__button {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    background-color: rgb(26, 37, 42);
+    width: 110px;
+    height: 65px;
+    margin: auto;
+    color: aliceblue;
+}
+
+.buttons-container__button:hover {
+    cursor: pointer;
+    width: 110px;
+    margin: auto;
+    background-color: rgb(39, 54, 60);
+}

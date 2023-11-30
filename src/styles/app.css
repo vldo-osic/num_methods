@@ -1,0 +1,81 @@
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 6px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: rgb(19, 26, 29);
+    position:fixed;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: #843465;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+.main-page {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 40px;
+}
+.app-preview h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    color: aliceblue;
+}
+
+.arrow-1 {
+    cursor: pointer;
+    
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    width: 80px;
+    height: 50px;
+    margin: 20px;
+}
+.arrow-1 div {
+    position: absolute;
+    top: 20px;
+    width: 90px;
+    height: 10px;
+    background-color: aliceblue;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    left: 0px;
+    display: block;
+}
+.arrow-1 div::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: -11px;
+    right: 57px;
+    background-color: aliceblue;
+    transform: rotate(-45deg);
+}
+.arrow-1 div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: 11px;
+    right: 57px;
+    background-color: aliceblue;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-135deg);
+}
+.arrow-1:hover {
+    animation: arrow-1 1s linear infinite;
+}
+@keyframes arrow-1 {
+    0% {
+        left:30px;
+    }
+    50% {
+        left:10px;
+    }
+    100% {
+        left:30px;
+    }
+}
