@@ -5,7 +5,6 @@ import { gauss } from "../../helpers/matrix/gauss"
 import { fill, fillDiagDominant, fillForLU, fillTridiagonal, getTMatrix } from "../../helpers/matrix/matrixHelp"
 import { thomasAlgorithm } from "../../helpers/matrix/tridiagonal"
 import { Matrix } from "../../components/matrix/Matrix"
-import { gaussSeidel } from "../../helpers/matrix/gaussSeidel"
 import BackButton from "../../components/BackButton"
 
 export const MatrixModule = () => {
@@ -32,9 +31,6 @@ export const MatrixModule = () => {
     const getThomas = () => {
         matrix && setResutl(thomasAlgorithm(matrix))
     }
-    const getGaussSeidel = () => {
-        matrix && setResutl(gaussSeidel(matrix))
-    }
     return (
         <div className="matrix-container">
             <BackButton/>
@@ -48,7 +44,6 @@ export const MatrixModule = () => {
             {matrix && <div className="buttons-container">
                     <button className="buttons-container__button" onClick={getGauss}>Gauss</button>
                     <button className="buttons-container__button" onClick={getThomas}>Thomas</button>
-                    <button className="buttons-container__button" onClick={getGaussSeidel}>Gauss-Seidel</button>
                 </div>
             }  
             {result && <span> Массив результатов, полученный умножением матрицы на столбец x = | 1 2 3 4 5 6 7 8 |</span> }

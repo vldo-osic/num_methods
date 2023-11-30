@@ -1,4 +1,5 @@
-export const LU = (matrix: number[][]): LUResult => {
+
+export const LU = (matrix: number[][]) => {
     const size = matrix.length
     const L: number[][] = []
     const U: number[][] = matrix
